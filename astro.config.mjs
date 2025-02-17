@@ -1,19 +1,9 @@
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel/serverless";
+import staticAdapter from '@astrojs/static';
 
-// If you are not going to use vercel analytics you can delete the analytics
-// If you want to remove vercel from your project you can do npm uninstall vercel
 export default defineConfig({
-  output: "server",
-  site: "https://DiegoBernacheaRojas.github.io", // Reemplaza con la URL de tu sitio
-  base: "DiegoBernacheaRojas.github.io",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
+  output: "static",
+  site: "https://DiegoBernacheaRojas.github.io", // Para sitio de usuario. Si es de proyecto, incluye el repo.
+  base: "/", // Para sitio de usuario. Para proyecto: "/nombre-del-repo/"
+  adapter: staticAdapter(),
 });
-
-//If you don't have vercel the configuration will be empty
-
-//ej : export default defineConfig({});
