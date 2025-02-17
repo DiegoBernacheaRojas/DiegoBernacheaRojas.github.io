@@ -6,6 +6,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   output: "server",
   site: "https://DiegoBernacheaRojas.github.io", // Reemplaza con la URL de tu sitio
+  base: "DiegoBernacheaRojas.github.io",
   adapter: vercel({
     webAnalytics: {
       enabled: true,
