@@ -1,0 +1,172 @@
+---
+import Section_projects from "../components/Section_projects.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio de Diego - Programador Full-Stack</title>
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <main class="px-4">
+      <Sidebar>
+        <ul>
+          <li><a href="#descripcion">Descripción</a></li>
+          <li><a href="#imagen1">Módulo Registro</a></li>
+          <li><a href="#imagen2">Módulo Clientes</a></li>
+          <li><a href="#imagen3">Módulo Reportes</a></li>
+          <!-- Agrega más enlaces según sea necesario -->
+        </ul>
+      </Sidebar>
+      <Section_projects id="descripcion">
+        <h1>Empresa Amecar - Sistema de Ventas (Aplicación web)</h1>
+        <p class="text-xl">
+          Este proyecto de final de carrera implementa un sistema integral para la gestión de ventas, desarrollado con HTML, CSS, JavaScript y Python usando Flask. Emplea SQL Server como base de datos, sigue el esquema MVC y utiliza Bootstrap y jQuery para una interfaz responsiva y moderna. La aplicación permite gestionar ventas, administrar clientes, productos, empleados y roles, realizar ventas, consultar un historial detallado de transacciones y recuperar ventas, optimizando la operación comercial y facilitando la toma de decisiones.
+        </p>
+      </Section_projects>
+
+      <!-- Sección de galería de capturas -->
+      <Section_projects id="galeria">
+        <h2>Capturas del Proyecto</h2>
+        <figure>
+          <img src="/projects/AmecarApp/login2.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/home.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/opciones_sidebar.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/productos.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/clientes.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/empleados.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/roles.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/realizar_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/detalle_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/recuperar_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/projects/AmecarApp/reporte_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <figcaption>
+            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+          </figcaption>
+        </figure>
+        
+      </Section_projects>
+    </main>
+  </body>
+
+  <style is:global>
+    :root {
+      color-scheme: dark;
+    }
+    html {
+      font-family: "Source Code Pro Variable", monospace;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #171717;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: radial-gradient(circle 500px at 50% 200px, #3e3e3e, transparent);
+      filter: blur(100px);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+      border-bottom: 2px solid #555;
+      padding-bottom: 0.5rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ccc;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    figure {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</html>

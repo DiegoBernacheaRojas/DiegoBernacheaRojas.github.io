@@ -1,0 +1,41 @@
+---
+const { id } = Astro.props
+---
+
+<aside id={id} class="sidebar">
+  <h2>sadsd</h2>
+  <nav>
+    <slot/>
+  </nav>
+</aside>
+
+<style>
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  .sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar nav ul li {
+    margin: 1rem 0;
+  }
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+</style>
