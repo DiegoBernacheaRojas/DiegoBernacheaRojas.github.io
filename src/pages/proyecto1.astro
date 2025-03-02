@@ -19,11 +19,61 @@ import Sidebar from "../components/Sidebar.astro";
     <main class="px-4">
       <Sidebar>
         <ul>
-          <li><a href="#descripcion">Descripción</a></li>
-          <li><a href="#imagen1">Módulo Registro</a></li>
-          <li><a href="#imagen2">Módulo Clientes</a></li>
-          <li><a href="#imagen3">Módulo Reportes</a></li>
-          <!-- Agrega más enlaces según sea necesario -->
+          <li class="sidebar-item">
+            <a href="#login">
+              <span>Login</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#principal">
+              <span>Pagina principal</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#opciones">
+              <span>Menú de opciones</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#productos">
+              <span>Módulo de productos</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#clientes">
+              <span>Modulo de clientes</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#empleados">
+              <span>Módulo empleados</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#roles">
+              <span>Módulo roles</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#realizarVentas">
+              <span>Realizar ventas</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#detalleVentas">
+              <span>Detalles de ventas</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#recuperarVentas">
+              <span>Recuperar ventas</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#reporteVentas">
+              <span>Reportes de ventas</span>
+            </a>
+          </li>
         </ul>
       </Sidebar>
       <Section_projects id="descripcion">
@@ -37,69 +87,69 @@ import Sidebar from "../components/Sidebar.astro";
       <Section_projects id="galeria">
         <h2>Capturas del Proyecto</h2>
         <figure>
-          <img src="/projects/AmecarApp/login2.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/login2.PNG" alt="Login de la aplicación" id="login"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Login de la aplicación: El sistema cuenta con un login que verifica las credenciales y envia mensajes de error (El login usa token para guardar la sesión).
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/home.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/home.PNG" alt="Vista Principal de la pagina" id="principal"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Vista Principal de la pagina: La vista principal tiene información que sea util para el propietario del negocio en este caso se incluyeron los reportes que el cliente creyo necesarios.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/opciones_sidebar.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/opciones_sidebar.PNG" alt="Menu de opciones" id="opciones"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Menu de opciones: El menu se encuentra en esta barra, donde se puede apreciar todas las opciones que posee el sistema. Ademas de tener la opcion para cerrar sesión en el dispositivo. 
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/productos.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/productos.PNG" alt="Módulo de Productos" id="productos"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Productos: Se puede registrar a los productos, alterar su estado actual y eliminar los que no sean necesarios. Cuenta con una funcion que actualiza el stock cada vez que se realiza una venta del producto.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/clientes.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/clientes.PNG" alt="Módulo de Clientes" id="clientes"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Clientes: Se puede registrar a los clientes, alterar su estado actual y eliminar los que no sean necesarios, el registro de clientes se contempla para clientes frecuentes o importantes, no se necesita registrar a clientes casuales para una venta.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/empleados.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/empleados.PNG" alt="Módulo de Empleados" id="empleados"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Empleados: Se puede registrar a los empleados, alterar su estado actual y eliminar los que no sean necesarios, pero no se permite repetir información sencible como numero de documento o el correo electronico.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/roles.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/roles.PNG" alt="Módulo de Roles" id="roles"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Roles: Se puede registrar a los roles, alterar su estado actual y eliminar los que no sean necesarios, pero se tiene que tener en cuenta que no se peuede eliminar un rol que este siendo usada para ello se tiene una alerta.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/realizar_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/realizar_ventas.PNG" alt="Módulo para Realizar una Venta" id="realizarVentas"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo para Realizar una Venta: Se puede seleccionar productos atraves de escribir el codigo de barras, esto porque el sistema funciona con una pistola escaner, tambien en caso no funcione el escaneo de codigo de barras se puede seleccionar el producto desde una lista que se puede filtrar por descripcion y categoria, ademas de contar con una funcion que acumula los productos para evitar la repeticion en el detalle de ventas. Para el registro del cliente cuenta con dos alternativas, en una se puede ingresar el dni y nombre del cliente y en la otra se puede ingresar el ruc, razon social y direccion, obviamente para agilizar esta parte se hace uso de apis de sunat y reniec que pueden rellenar esa informacion solo con el numero de documento pero en caso de que llegue a fallar si el cliente esta registrado buscara los datos de la base de datos, en el caso de que el cliente pida boleta es opcional rellenar la informacion del comprador. <br> <br>Para el metodo de pago se contemplo cuatro opcines para las cuales son efectivo, tarjeta, yape y plin, debido a que son las formas de pago mas populares, el sistema no posee una parte de facturacion, el registro solo necesita que se ingrese la informacion necesario como el monto, numero de transferencia o numero de celular. Cuendo se complete la venta exitosamente se imprimira un comprobante de compra con la informacion de la venta.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/detalle_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/detalle_ventas.PNG" alt="Módulo de Detalles de Ventas" id="detalleVentas"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Detalles de Ventas: Se puede visualizar todas las ventas realizadas, se pude observar de manera detallada los productos vendidos y eliminar la venta en caso de algun fallo para no afectar a los reportes financieros.
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/recuperar_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/recuperar_ventas.PNG" alt="Módulo de Recuperar Ventas" id="recuperarVentas"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Recuperar Ventas: Se puede ver las ventas que fueron eliminadas y se puede restaurarlas en caso de que se hallan equivocado, no existe un limite al recuperar las ventas, ningun registro se puede eliminar de manera permanente desde el sistema..
           </figcaption>
         </figure>
         <figure>
-          <img src="/projects/AmecarApp/reporte_ventas.PNG" alt="Módulo de Registro de Ventas" />
+          <img src="/projects/AmecarApp/reporte_ventas.PNG" alt="Módulo de Reportes de ventas" id="reporteVentas"/>
           <figcaption>
-            Módulo de Registro de Ventas: Registro y seguimiento de transacciones.
+            Módulo de Reportes de ventas: Se tiene varios filtros para poder sacar reportes financieros de las ventas, entre ellos estan por fecha, por productos, por cliente, por empleado y de ser boleta o factura, estos reportes se pueden descargar en pdf.
           </figcaption>
         </figure>
         
