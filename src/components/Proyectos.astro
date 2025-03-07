@@ -3,6 +3,8 @@ import Html from "../icons/Tecnologias/Lenguajes/Html.astro";
 import Css from "../icons/Tecnologias/Lenguajes/Css.astro";
 import Js from "../icons/Tecnologias/Lenguajes/Js.astro";
 import Python from "../icons/Tecnologias/Lenguajes/Python.astro";
+import Android from "../icons/Tecnologias/Lenguajes/Android.astro";
+import Php from "../icons/Tecnologias/Lenguajes/Php.astro";
 import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
@@ -34,6 +36,16 @@ const TAGS = {
     class: "bg-[#167bc2] text-white",
     icon: Python,
   },
+  Php: {
+    name: "Php",
+    class: "bg-[#b68fff] text-white",
+    icon: Php,
+  },
+  Android: {
+    name: "Android",
+    class: "bg-[#e6ffe8] text-black",
+    icon: Android,
+  },
 };
 
 const PROJECTS = [
@@ -44,6 +56,14 @@ const PROJECTS = [
     github: "https://github.com/DiegoBernacheaRojas/AmecarApp/tree/master",
     image: "/projects/AmecarApp/login2.PNG",
     tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.Python],
+  },
+  {
+    title: "Empresa Geor - Sistema de Asistencias Virtual (Conjunto de apicaciónes web y movil)",
+    description: "Este proyecto personal de sistema de asistencias virtual es una solución integral desarrollada para resolver un problema real en la empresa durante mis prácticas preprofesionales, orientada a controlar la asistencia de empleados remotos. Se utilizó HTML, CSS y JavaScript para la interfaz, implementando React en el front-end para el empleado y una aplicación web administrativa basada en JS para el administrador. Además, se desarrolló una app móvil en Android para facilitar el registro de asistencia desde dispositivos móviles. En el backend, se empleó PHP con Laravel y se utilizó la base de datos MySQL para garantizar una robusta gestión de datos.",
+    link: "/proyecto2",
+    github: "https://github.com/DiegoBernacheaRojas/Sistema-Asistencias",
+    image: "/projects/AsistenciaSystem/webappEmp/Login.PNG",
+    tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.Android, TAGS.Php],
   },
   // {
   //   title: "Aplicacion del Clima",

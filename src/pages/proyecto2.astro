@@ -1,0 +1,256 @@
+---
+import Section_projects from "../components/Section_projects.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio de Diego - Programador Full-Stack</title>
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <main class="px-4">
+      <Sidebar>
+        <ul>
+          <li class="sidebar-item">
+            <a href="#ApkAsistenciasEmp">
+              <span>Aplicación movil para emplados</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#AppWebAsistenciasAdmin">
+              <span>Aplicación web para administrador</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#AppWebAsistenciasEmp">
+              <span>Aplicación web para empleados</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#AppAsistenciasBackend">
+              <span>Aplicación de backend API RESET</span>
+            </a>
+          </li>
+        </ul>
+      </Sidebar>
+      <Section_projects id="descripcion">
+        <h1>Empresa Geor - Sistema de Asistencias Virtual (Conjunto de apicaciónes web y movil)</h1>
+        <p class="text-xl">
+          Este proyecto personal de sistema de asistencias virtual es una solución integral desarrollada para resolver un problema real en la empresa durante mis prácticas preprofesionales, orientada a controlar la asistencia de empleados remotos. El sistema se compone de múltiples aplicaciones interconectadas: se utilizó HTML, CSS y JavaScript para la interfaz, implementando React en el front-end para el empleado y una aplicación web administrativa basada en JS para el administrador. Además, se desarrolló una app móvil en Android que permite a los empleados marcar su asistencia de forma sencilla y segura.
+          <br><br>
+          El funcionamiento del sistema es el siguiente: el empleado, mediante la app móvil, inicia el proceso de registro de asistencia, que comienza con una verificación facial para autenticar su identidad. Posteriormente, debe escanear un código QR generado por la aplicación web para empleados, lo que confirma que se encuentra en un entorno controlado (por ejemplo, frente a una PC). Esta doble verificación refuerza la integridad del proceso de asistencia.
+          <br><br>
+          El corazón del sistema es el proyecto AppAsistenciasBackend, desarrollado en PHP con Laravel, que sigue el esquema MVC (Modelo-Vista-Controlador). Este backend central se encarga de gestionar y proporcionar las APIs REST que integran todas las aplicaciones. A través de modelos, servicios y controladores, el sistema maneja la lógica de negocio y la persistencia de datos en una base de datos MySQL, implementando mecanismos de seguridad como el uso de tokens y encriptación hash para las contraseñas.
+          <br><br>
+          Por otro lado, la AppWebAsistenciasAdmin permite al administrador monitorizar en tiempo real las marcas de asistencia, evaluar justificaciones, modificar horarios y gestionar datos de la base de datos, brindando así un control completo sobre el sistema. Aunque el proyecto no se completó al 100% debido a limitaciones de tiempo y prioridades, se han implementado las funciones principales para el empleado, quedando pendientes algunos módulos adicionales para el administrador.        </p>
+      </Section_projects>
+
+      <!-- Sección de galería de capturas -->
+      <Section_projects id="galeria">
+        <!-- Sección de Proyectos Front-end -->
+        <h2>Proyectos Front-end</h2>
+      
+        <!-- ApkAsistenciasEmp: App móvil para empleados -->
+        <section id="ApkAsistenciasEmp">
+          <h3>ApkAsistenciasEmp (App Móvil para Empleados)</h3>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/login.PNG" alt="Login de la aplicación móvil" />
+            <figcaption>Login de la aplicación móvil.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/menu.PNG" alt="Pantalla principal de la app móvil" />
+            <figcaption>Pantalla principal de la app móvil.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/historial.PNG" alt="Historial de justificaciones" />
+            <figcaption>Historial de justificaciones del empleado.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/horario.PNG" alt="Horario laboral" />
+            <figcaption>Horario laboral del empleado.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/marcar.PNG" alt="Marcar la asistencia" />
+            <figcaption>Marcar la asistencia del empleado de entrada y salida.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/actualizar.PNG" alt="Actualizar datos" />
+            <figcaption>Actualizar datos faciales para marcar asistencia.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/apkEmp/justificar.PNG" alt="Actualizar datos" />
+            <figcaption>Justificar las faltas, tardansas o salidas anticipadas del empleado y enviarlas para su evaluación,.</figcaption>
+          </figure>
+        </section>
+      
+        <!-- AppWebAsistenciasAdmin: Aplicación web administrativa -->
+        <section id="AppWebAsistenciasAdmin">
+          <h3>AppWebAsistenciasAdmin (Aplicación Web Administrativa)</h3>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Login.PNG" alt="Login de la app web administrativa" />
+            <figcaption>Dashboard y gestión de usuarios en la app administrativa.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/General.PNG" alt="Vista Principal" />
+            <figcaption>Gestión de usuarios y roles.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Menu.PNG" alt="Menu" />
+            <figcaption>Todas las opciones disponibles para el administrador estan en administración, los modulos de operaciones y reportes les faltan detalles.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Areas.PNG" alt="Areas" />
+            <figcaption>Gestión de areas de trabajo.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Cargos.PNG" alt="Cargos" />
+            <figcaption>Gestión de cargos de trabajo.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Empleados.PNG" alt="Empleados" />
+            <figcaption>Gestión de empleados.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Feriados.PNG" alt="Feriados" />
+            <figcaption>Gestión de los dias no laborables.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Horarios.PNG" alt="Horarios" />
+            <figcaption>Gestión de los horarios que puede tener cada empleado podiendo personalizarlo o asignar el mismo horario.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Usuarios.PNG" alt="Usuarios" />
+            <figcaption>Gestión de usuarios que se vinculan a un empleado de esta forma se evita el repetir usuarios.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappAdmin/Analisis.PNG" alt="Analisis" />
+            <figcaption>Analisis de rendimiento de asistencias, de horas trabajadas y otra informacion de interes.</figcaption>
+          </figure>
+        </section>
+      
+        <!-- AppWebAsistenciasEmp: Aplicación web para empleados -->
+        <section id="AppWebAsistenciasEmp">
+          <h3>AppWebAsistenciasEmp (Aplicación Web para Empleados)</h3>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappEmp/Login.PNG" alt="Login de la app web para empleados" />
+            <figcaption>Login de la aplicación web para empleados.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappEmp/Informacion.PNG" alt="Informacion" />
+            <figcaption>Informacion de la aplicacion movil y de como funciona en conjuto con el app web, ademas de las normas de la empresa segun la asistencia.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappEmp/Asistencias.PNG" alt="Registro de asistencia" />
+            <figcaption>Registro de asistencia desde la app web para empleados.</figcaption>
+          </figure>
+          <figure>
+            <img src="/projects/AsistenciaSystem/webappEmp/CodigoQR.PNG" alt="CodigoQR" />
+            <figcaption>Muestra el codigo qr que se necesita escanear para comprobar que sea el empleado que esta ingresando amarcar la asistencia con el app movil.</figcaption>
+          </figure>
+        </section>
+      
+        <!-- Sección de Proyecto Backend -->
+        <h2>Proyecto Backend - AppAsistenciasBackend</h2>
+        <section id="AppAsistenciasBackend">
+          <p>
+            El proyecto backend se desarrolló en PHP con Laravel siguiendo el esquema MVC. Este componente central provee las APIs REST que integran el sistema, gestionando la lógica de negocio, la persistencia en la base de datos MySQL y la seguridad mediante tokens y encriptación hash para las contraseñas.
+          </p>
+          <p>
+            Entre sus funciones destacan:
+          </p>
+          <ul>
+            <li>Autenticación y autorización de usuarios.</li>
+            <li>Control y registro de las asistencias a través de APIs.</li>
+            <li>Integración de modelos, servicios y controladores para una gestión robusta de datos.</li>
+          </ul>
+          <br>
+          <figure class="img-container">
+            <img src="/projects/AsistenciaSystem/appBackend/DiagramaMVC.png" alt="Diagrama MVC del backend" />
+            <figcaption>Diagrama de la arquitectura MVC implementada en el backend.</figcaption>
+          </figure>
+        </section>
+      </Section_projects>
+      
+    </main>
+  </body>
+
+  <style is:global>
+    :root {
+      color-scheme: dark;
+    }
+    html {
+      font-family: "Source Code Pro Variable", monospace;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #171717;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: radial-gradient(circle 500px at 50% 200px, #3e3e3e, transparent);
+      filter: blur(100px);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+      border-bottom: 2px solid #555;
+      padding-bottom: 0.5rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ccc;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    figure {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    .img-container img {
+      background-color: #ffffff; /* Color de fondo blanco */
+      padding: 0.5rem;           /* Espacio interno para separar la imagen del fondo */
+      border-radius: 8px;        /* Bordes redondeados (opcional) */
+    }
+    
+    .img-container figcaption {
+      color: #333;               /* Asegúrate que el color del texto contraste */
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</html>
